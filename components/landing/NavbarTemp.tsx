@@ -34,7 +34,7 @@ export default function Navbar() {
   aria-label="BidNest home"
 >
   <Image
-    src="/logo.png"
+    src="/logo-basic.png"
     alt="BidNest"
     width={450}
     height={550}
