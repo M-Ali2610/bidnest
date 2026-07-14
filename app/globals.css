@@ -5,6 +5,15 @@
   --foreground: #171717;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F9FAFC;
+  color: #010F28;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

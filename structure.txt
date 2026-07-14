@@ -1,0 +1,7 @@
+components/
+└── landing/
+    ├── Navbar.tsx
+    ├── Hero.tsx
+    ├── Features.tsx
+    ├── Pricing.tsx
+    ├── Footer.tsx
