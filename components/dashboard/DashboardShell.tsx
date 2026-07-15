@@ -3,7 +3,7 @@
 import { ReactNode, useState } from "react";
 
 import MobileSidebar from "@/components/dashboard/MobileSidebar";
-import Sidebar from "@/components/dashboard/DesktopSidebar";
+import DesktopSidebar from "@/components/dashboard/DesktopSidebar";
 import Topbar from "@/components/dashboard/Topbar";
 
 interface DashboardShellProps {
@@ -17,7 +17,7 @@ export default function DashboardShell({
 
   return (
     <div className="min-h-screen bg-[#F9FAFC] lg:flex">
-      <Sidebar />
+      <DesktopSidebar />
 
       <div className="min-w-0 flex-1">
         <Topbar

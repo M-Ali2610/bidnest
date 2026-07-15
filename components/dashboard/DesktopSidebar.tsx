@@ -42,10 +42,11 @@ const navigation = [
   },
 ];
 
-export default function Sidebar() {
+export default function DesktopSidebar() {
   return (
-    <aside className="hidden h-screen w-72 shrink-0 flex-col bg-[#010F28] lg:flex">
-      <div className="flex h-20 items-center border-b border-white/10 px-6">
+    <aside className="sticky top-0 hidden h-screen w-72 shrink-0 flex-col overflow-hidden bg-[#010F28] lg:flex">
+      {/* Logo */}
+      <div className="flex h-20 shrink-0 items-center border-b border-white/10 px-6">
         <Link href="/dashboard" aria-label="BidNest dashboard">
           <Image
             src="/logo-white.png"
@@ -58,7 +59,8 @@ export default function Sidebar() {
         </Link>
       </div>
 
-      <nav className="flex-1 overflow-y-auto px-4 py-6">
+      {/* Scrollable navigation */}
+      <nav className="min-h-0 flex-1 overflow-y-auto px-4 py-6">
         <p className="px-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
           Workspace
         </p>
@@ -81,9 +83,12 @@ export default function Sidebar() {
         </div>
       </nav>
 
-      <div className="border-t border-white/10 p-4">
+      {/* Support section */}
+      <div className="shrink-0 border-t border-white/10 p-4">
         <div className="rounded-xl bg-white/5 p-4">
-          <p className="text-sm font-semibold text-white">Need assistance?</p>
+          <p className="text-sm font-semibold text-white">
+            Need assistance?
+          </p>
 
           <p className="mt-1 text-xs leading-5 text-slate-400">
             Contact BidNest support for help with your account.

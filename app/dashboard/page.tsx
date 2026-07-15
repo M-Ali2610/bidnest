@@ -1,17 +1,57 @@
+import {
+  BarChart3,
+  FileText,
+  ShoppingBag,
+  Users,
+} from "lucide-react";
+
+import QuickActions from "@/components/dashboard/QuickActions";
+import RecentQuotations from "@/components/dashboard/RecentQuotations";
+import RecentRFQs from "@/components/dashboard/RecentRFQs";
+import SectionHeader from "@/components/dashboard/SectionHeader";
+import StatCard from "@/components/dashboard/StatCard";
+
 export default function DashboardPage() {
   return (
-    <section>
-      <h2 className="text-2xl font-bold text-[#010F28] sm:text-3xl">
-        Dashboard overview
-      </h2>
+    <>
+      <SectionHeader
+        title="Dashboard Overview"
+        description="Monitor procurement activity and supplier engagement."
+      />
 
-      <p className="mt-2 text-slate-600">
-        Track your RFQs, quotations, and supplier activity.
-      </p>
+      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <StatCard
+          title="Open RFQs"
+          value={0}
+          icon={FileText}
+        />
 
-      <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-8">
-        Dashboard content will appear here.
+        <StatCard
+          title="Quotations Received"
+          value={0}
+          icon={BarChart3}
+        />
+
+        <StatCard
+          title="Active Suppliers"
+          value={0}
+          icon={Users}
+        />
+
+        <StatCard
+          title="Awarded Orders"
+          value={0}
+          icon={ShoppingBag}
+        />
       </div>
-    </section>
+
+      <QuickActions />
+
+      <div className="mt-10 grid gap-8 xl:grid-cols-2">
+        <RecentRFQs />
+
+        <RecentQuotations />
+      </div>
+    </>
   );
 }
