@@ -1,9 +1,14 @@
-import Navbar from "@/components/landing/NavbarTemp";
+import Navbar from "@/components/layout/LandingNavbar"
+import Footer from "@/components/layout/Footer";
+
 import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
 import Pricing from "@/components/landing/Pricing";
 import FAQs from "@/components/landing/FAQs";
-import Footer from "@/components/landing/Footer";
+
+
+
+
 
 export default function Home() {
   return (
