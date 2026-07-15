@@ -26,7 +26,7 @@ export default function AuthNavbar({
           aria-label="BidNest Home"
         >
           <Image
-            src="/logo.png"
+            src="/logo-basic.png"
             alt="BidNest"
             width={450}
             height={550}
